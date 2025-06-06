@@ -310,3 +310,56 @@ span{
         padding-top: 5px;
         
     }
+/* Make images and containers scale */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Text scaling */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Flex layout for responsiveness */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Responsive columns */
+.col {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Responsive typography */
+h1, h2, h3 {
+  word-wrap: break-word;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  nav, header, footer {
+    text-align: center;
+  }
+}
